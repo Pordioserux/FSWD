@@ -1,0 +1,17 @@
+title Form button is clicked
+
+note over browser:
+the code in spa.js reads the submitted form
+appends it to data.json on browser side, 
+then rerenders the list on the page
+while preventing it to refresh the page
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server: 
+server executes local code
+appends new note to data.json on server side
+end note 
+
+server->browser: HTTP 201
